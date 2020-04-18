@@ -112,18 +112,18 @@ struct key {
 static struct key bindings[] = {
 	/* Back */
 	{ KEY_LEFT,       SEL_BACK },
-	{ 'h',            SEL_BACK },
+	{ 'd',            SEL_BACK },
 	/* Inside or select */
 	{ KEY_ENTER,      SEL_GOIN },
 	{ '\r',           SEL_GOIN },
 	/* Pure navigate inside */
 	{ KEY_RIGHT,      SEL_NAV_IN },
-	{ 'l',            SEL_NAV_IN },
+	{ 'n',            SEL_NAV_IN },
 	/* Next */
-	{ 'j',            SEL_NEXT },
+	{ 'h',            SEL_NEXT },
 	{ KEY_DOWN,       SEL_NEXT },
 	/* Previous */
-	{ 'k',            SEL_PREV },
+	{ 't',            SEL_PREV },
 	{ KEY_UP,         SEL_PREV },
 	/* Page down */
 	{ KEY_NPAGE,      SEL_PGDN },
@@ -175,7 +175,7 @@ static struct key bindings[] = {
 	{ '.',            SEL_HIDDEN },
 	{ KEY_F(5),       SEL_HIDDEN },
 	/* Detailed listing */
-	{ 'd',            SEL_DETAIL },
+	{ 'D',            SEL_DETAIL },
 	/* File details */
 	{ 'f',            SEL_STATS },
 	{ CONTROL('F'),   SEL_STATS },
@@ -184,16 +184,16 @@ static struct key bindings[] = {
 	/* Create archive */
 	{ 'z',            SEL_ARCHIVE },
 	/* Sort toggles */
-	{ 't',            SEL_SORT },
-	{ CONTROL('T'),   SEL_SORT },
+	{ 'j',            SEL_SORT },
+	//{ CONTROL('D'),   SEL_SORT },
 	/* Redraw window */
 	{ CONTROL('L'),   SEL_REDRAW },
 	/* Select current file path */
-	{ CONTROL('J'),   SEL_SEL },
+	{ CONTROL('H'),   SEL_SEL },
 	{ ' ',            SEL_SEL },
 	/* Toggle select multiple files */
 	{ 'm',            SEL_SELMUL },
-	{ CONTROL('K'),   SEL_SELMUL },
+	{ CONTROL('T'),   SEL_SELMUL },
 	/* Select all files in current dir */
 	{ 'a',            SEL_SELALL },
 	/* List, edit selection */
@@ -214,7 +214,7 @@ static struct key bindings[] = {
 	{ 'o',            SEL_OPENWITH },
 	{ CONTROL('O'),   SEL_OPENWITH },
 	/* Create a new file */
-	{ 'n',            SEL_NEW },
+	{ 'N',            SEL_NEW },
 	/* Show rename prompt */
 	{ CONTROL('R'),   SEL_RENAME },
 	/* Rename contents of current dir */

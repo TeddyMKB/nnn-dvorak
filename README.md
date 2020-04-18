@@ -1,3 +1,8 @@
+#nnn-dvorak
+I love this file manager, but I use the Dvorak keyboard layout.
+I choose to rebind my Vim keys to d, h, t, and n.
+This is nnn with those keybindings.
+
 <h1 align="center">nnn - <i>supercharge your productivity!</i></h1>
 
 <p align="center">
